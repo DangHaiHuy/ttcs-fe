@@ -1,0 +1,41 @@
+/* Hàng tiêu đề */
+.ant-table-thead .ant-table-cell {
+    background-color: #0284c7 !important;
+    color: white !important;
+    text-align: center !important;
+
+}
+
+/* .ant-table-tbody tr:nth-child(even) {
+    background-color: white;
+    text-align: center;
+}
+
+.ant-table-tbody tr:nth-child(odd) {
+    text-align: center;
+    background: #F1E6FF;
+} */
+
+/* hàng chẵn cột đầu */
+/* .ant-table-tbody tr:nth-child(even) td:first-child {  
+    background-color: white ;
+} */
+
+/* hàng lẻ cột đầu */
+/* .ant-table-tbody tr:nth-child(odd) td:first-child {
+    background-color: #F1E6FF ;
+} */
+.ant-table-tbody tr{
+    background-color: white;
+    text-align: center;
+}
+
+.ant-table-tbody tr:hover td{
+    background-color: oklch(0.984 0.019 200.873) !important;
+}
+
+.ant-table-tbody tr td:first-child{
+    background-color: oklch(0.968 0.007 247.896) !important;
+}
+
+
