@@ -29,6 +29,7 @@ function Home() {
     const navigate = useNavigate();
 
     const dispatch = useDispatch();
+    console.log(chatRoomFocus)
 
     useEffect(() => {
         dispatch(setSidebarTitleAction('home'));

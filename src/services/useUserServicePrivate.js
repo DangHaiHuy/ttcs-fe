@@ -95,6 +95,19 @@ function useUserServicePrivate() {
         }
     };
 
+    const getUser = async (id) => {
+        try {
+            const res = await httpRequestPrivate.get(`/users/get-user/${id}`);
+            return res.data;
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    const formatName=(firstName,lastName)=>{
+        return `${lastName.trim()} ${firstName.trim()}`;
+    }
+
     return {
         getMyInfo,
         searchUserByKey,
@@ -105,6 +118,8 @@ function useUserServicePrivate() {
         checkBlockedUser,
         unblockUser,
         getListBlockedUser,
+        getUser,
+        formatName
     };
 }
 
